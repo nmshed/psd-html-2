@@ -1,0 +1,695 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.ttc{
+    text-transform: capitalize
+}
+.fullwrapper{
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* -=========================
+font import
+============================*/
+@font-face{
+    font-family: 'mont-reg';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'mont-bold';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: 'kaus-reg';
+    src: url(../fonts/Kaushan/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'robo-litalic';
+    src: url(../fonts/roboto/Roboto-LightItalic.ttf);
+}
+
+
+/*=========================
+font css ends
+============================*/
+
+.section-head{
+    text-align: center;
+}
+.section-head h6{
+    font-family: 'kaus-reg';
+    font-size: 24px;
+    color: #333333;
+}
+.section-head h6::first-letter{
+    text-transform: capitalize;
+}
+.section-head h3{
+    font-family: 'mont-bold';
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.line{
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 39px auto;
+}
+/*=========================
+Space css
+============================*/
+
+.mx-30{
+    margin: 0 30px;
+}
+
+/* -=========================
+commomn css ends
+============================*/
+
+.welcome-bg{
+    height: 1000px;
+    /*background-image: url(../images/header_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    position: relative;
+    
+}
+.welcome-bg img{
+    height: 100%;
+    width: 100%;
+    
+}
+.welcome-bg .overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#e78182, #efd689);
+    opacity: 90%;
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.welcome-bg .overlay .welcome-contents{
+    height: 100%;
+    position: relative;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg{
+    width: 100%;
+    height: 84px;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .logo {
+    width: 100px;
+    margin-left: 18px;
+    float: left;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .logo a h6{
+    font-family: 'mont-bold';
+    font-size: 30px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul{
+    
+    float: right;
+    margin-top: 35px;
+    
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul li{ 
+    display: inline-block;
+    margin-right: 55px;
+    
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul li .first{ 
+    color: #fce38a;
+    padding-bottom: 12px;
+    border-bottom: #fce38a solid 3px;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul li .last {
+    margin-right: 0;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul li a{
+
+    color: #ffffff;
+    font-family: 'mont-reg';
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all linea 0.3;
+}
+.welcome-bg .overlay .welcome-contents .menu-bg .menu-list ul li a:hover {
+    color: #fce38a;
+    border-bottom: 3px solid  #fce38a;
+    padding-bottom: 12px;
+}
+
+/*=================================================
+menu list end
++==================================================*/
+/*.welcome-bg .overlay .welcome-contents .creative-template{
+    height: 90PX;
+    width: 600px;
+    background-color: darkolivegreen;
+    
+}*/
+
+
+.welcome-bg .overlay .welcome-contents .creative-template h1{
+    font-family: 'kaus-reg';
+    font-size: 72px;
+    color: #ffffff;
+    text-transform:capitalize;
+    position: absolute;
+    top: 227px;
+    left: 354px;
+}
+.welcome-bg .overlay .welcome-contents .welcome-text{
+    width: 862px;
+    height: 277px;
+    
+    position: absolute;
+    top: 357px;
+    left: 203px;
+    
+}    
+.welcome-bg .overlay .welcome-contents .welcome-text h2{
+    font-family: 'mont-bold';
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 148px;
+    text-align: center;
+    color: #ffffff;
+      
+}
+
+.welcome-bg .overlay .welcome-contents .line{
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 710px;
+    left: 571px;
+}
+.welcome-bg .overlay .welcome-contents .learn-now a{
+    font-family: 'mont-bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 12px 30px;
+    display: inline-block;
+    position: absolute;
+    top: 783px;
+    left: 522px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+
+}
+.welcome-bg .overlay .welcome-contents .learn-now a:hover{
+    background: #ffffff;
+    color: #FDD299;
+}
+.welcome-bg .overlay .welcome-contents .learn-now .circles{
+    margin-top: 118px;
+    margin-bottom: 65px;
+    color: #ffffff;
+    position: absolute;
+    top: 800px;
+    left: 570px;
+}
+.welcome-bg .overlay .welcome-contents .learn-now .circles i:nth-of-type(2){
+    color: #ff2828;
+    margin: 0 3px;
+}
+
+/*=================================================
+            banner ends
+==================================================*/
+.about-bg{
+    margin: 90px 0 110px 0;
+}
+.about-bg .about{
+    height: 550px;
+}
+.about-bg .about .section-head h3{
+    padding-top: 10px;
+}
+
+.about-bg .about p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+    padding: 0 110px 100px 140px;
+    line-height: 24px;
+}
+.about-bg .about p::first-letter{
+	text-transform: capitalize;
+}
+.about-bg .about .story{
+    width: 380px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+.about-bg .about .story .overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f38181, #fce38a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition:all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.about-bg .about .story:hover .overlay{
+    opacity: 0.9;
+}
+.about-bg .about .story .overlay .overlay-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'mont-bold';
+    line-height: 35px;
+}
+/* =========================
+    About Section Ends
+========================= */
+
+.counter-bg{
+    height: 270px;
+    background: #95e1d3;
+}
+.counter-bg .counter{
+    height: 100%;
+}
+.counter-bg .counter .item{
+    height: 100%;
+    width: 200px;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+}
+.counter-bg .counter .item:last-of-type{
+    margin-right: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.counter-bg .counter .item h1{
+   padding-top: 40%;
+   font-family: 'mont-bold';
+   font-size: 72px;
+}
+.counter-bg .counter .item p{
+    text-transform: uppercase;
+    font-family: 'mont-reg';
+    font-size: 14px;
+}
+/* ==========================================
+    counter ends
+============================================== */
+
+.service-bg{
+    height: 400px;
+    margin: 115px 0 120px 0;
+}
+.service-bg .service .service-item{
+    height: 120px;
+    width: 380px;
+    float: left;
+    padding-top: 10px;
+}
+.service-bg .service .service-item .item-details{
+    padding: 0 30px;
+}
+.service-line1{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.service-line2 .item-image img{
+    margin-top: 50px;
+}
+.service-line2 .item-details{
+    margin-top: 50px;
+}
+.service-bg .service .service-item .item-image{
+    height: 100%;
+    width: 70px;
+    float: left;
+    position: relative; 
+}
+.service-bg .service .service-item .item-image img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.service-bg .service .service-item .item-details p:first-child{
+    text-transform: uppercase;
+    color: #333333;
+    font-family: 'mont-bold';
+    font-size: 14px;
+}
+.service-bg .service .service-item .item-details p:last-child{
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+/* =================================================
+    service ends
+=================================================== */
+
+.design-bg{
+    height: 850px;
+    background: url(../images/design-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.design-bg .design{
+    height: 100%;
+    margin-bottom: 110px;
+    position: relative;
+}
+.design-bg .design .section-head{
+   padding-top: 110px;
+}
+.design-bg .design .android{
+    position: absolute;
+    bottom: 0;
+    padding-left: 335px;
+    float: left;
+}
+.design-bg .design .iphone {
+    position: absolute;
+    right: 230px;
+    bottom: -90px;
+    float: right;
+}
+/* ======================================
+unique design ends
+======================================== */
+.whatwedo-bg{
+    height: 670px;
+    margin: 112px 0 120px 0;
+}
+.whatwedo-bg .whatwedo .ttc{
+    padding: 0 130px;
+    text-align: center;
+    color: #999999;
+    line-height: 24px;
+    font-family: 'arial';
+    font-size: 15px;
+    margin-bottom: 96px;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .left{
+    margin-right: 30px;
+    float: left;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .left img{
+    height: 388px;
+    width: 570px;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right{
+    width: 600px;
+    height: 380px;
+    float: right;
+    line-height: 60px;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .common-item{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    font-family: 'mont-bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right img{
+    padding-left: 15px;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .icon{
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .header-text{
+    width: 480px;
+    height: 100%;
+    float: left;
+}
+.whatwedo-bg .whatwedo ..whatwedo-contents .right .arrow{
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .photography-details{
+    width: 602px;
+    height: 180px;
+    line-height: 24px;
+    font-family: 'robo-litalic';
+    font-size: 15px;
+    color: #999999;
+    padding: 12px 30px 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .photography-details::first-letter{
+    text-transform: capitalize;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .creativity{
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+}
+.whatwedo-bg .whatwedo .whatwedo-contents .right .web-design{
+    width: 100%;
+    height: 60px;
+}
+/* =========================
+    what we do ends
+========================= */
+.comment-bg{
+    height: 290px;
+    background: #f8f8f8;
+    margin-bottom: 100px;
+}
+.comment-bg .comment{
+    height: 100%;
+}
+.comment-bg .comment .left-arrow{
+    height: 100%;
+    width: 70px;
+    float: left;
+    line-height: 290px;
+    text-align: center;
+}
+.comment-bg .comment .msg-icon{
+    height: 100%;
+    width: 170px;
+    float: left;
+    margin: 0 33px;
+}
+.comment-bg .comment .msg-icon .img-outline{
+    line-height: 290px;
+    text-align: center;
+    position: relative;
+}
+.comment-bg .comment .msg-icon .img-outline img:last-of-type{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.comment-bg .comment .txt-cmnt{
+    height: 100%;
+    width: 791px;
+    float: left;
+    margin-right: 33px;
+}
+.comment-bg .comment .txt-cmnt .main-comnt p{
+    font-family: 'robo-litalic';
+    color: #999999;
+    font-size: 23.5px;
+    line-height: 36px;
+    padding-top: 75px;
+}
+.comment-bg .comment .txt-cmnt .commentator{
+    margin-top: -10px;
+}
+.comment-bg .comment .txt-cmnt .commentator .line{
+    float: left;
+}
+.comment-bg .comment .txt-cmnt .commentator p{
+    font-family: 'kaus-reg';
+    font-size: 24px;
+    color: #333333;
+    line-height: 78px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    float: left;
+    
+}
+.comment-bg .comment .right-arrow{
+    height: 100%;
+    width: 70px;
+    float: left;
+    line-height: 290px;
+    text-align: center;
+}
+/* ====================================================
+comments End
+===================================================== */
+
+.meetourteam-bg{
+    height: 830px;
+    margin-bottom: 120px;
+}
+.meetourteam-bg .meetourteam{
+    height: 830px;
+}
+.meetourteam-bg .meetourteam p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+    padding: 0 110px 92px 140px;
+    line-height: 24px;
+}
+.meetourteam-bg .meetourteam p::first-letter{
+    text-transform: capitalize;
+}
+.meetourteam-bg .meetourteam .team-member{
+    height: 470px;
+    width: 380px;
+    float: left;
+    position: relative;
+}
+.meetourteam-bg .meetourteam .team-member .overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f38181, #fce38a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.meetourteam-bg .meetourteam .team-member:hover .overlay{
+    opacity: 0.9;
+    top: 0;
+    visibility: visible;
+}
+.meetourteam-bg .meetourteam .team-member .overlay .overlay-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.meetourteam-bg .meetourteam .team-member .overlay .overlay-link li{
+    float: left;
+}
+.meetourteam-bg .meetourteam .team-member .overlay .overlay-link a{
+    color: #f38181;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    padding: 12px 15px;
+    border-right: 1px solid #f38181;
+    background: #fce38a;
+}
+.meetourteam-bg .meetourteam .team-member .overlay .overlay-link a:hover{
+    background: #f38181;
+    color: #ffffff;
+}
+.meetourteam-bg .meetourteam .team-member .overlay .overlay-link a.no-border{
+    border: none;
+}
+.meetourteam-bg .meetourteam .team-member .member-details .member-name{
+    text-transform: uppercase;
+    font-family: 'mont-bold';
+    color: #333333;
+    font-size: 14px;
+    padding: 20px 0 0 0;
+}
+.meetourteam-bg .meetourteam .team-member .member-details .member-profession{
+    text-transform: capitalize;
+    font-family: 'robo-litalic';
+    color: #999999;
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-left: 107px;
+}
+.meetourteam-bg .meetourteam .team-member .member-details .member-profession .upper{
+    text-transform: uppercase;
+}
+.meetourteam-bg .meetourteam .team-member .member-details .member-profession .lower{
+    text-transform: lowercase;
+}
+/* =========================
+    meet our team Ends
+========================= */
+
+
+
+
